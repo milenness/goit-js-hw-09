@@ -1,0 +1,86 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1128px;
+}
+
+.gallery-item {
+  width: 360px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  cursor:
+    url("data:image/svg+xml;utf8,%3Csvg width='35' height='37' viewBox='0 0 35 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.1886 36.2432C10.5183 36.517 10.9334 36.6669 11.3619 36.6667L30.8649 36.6667C31.8374 36.6667 32.77 36.2804 33.4577 35.5927C34.1453 34.9051 34.5316 33.9725 34.5316 33L34.5316 19.7817C34.5313 18.8796 34.1984 18.0093 33.5967 17.3373C32.995 16.6652 32.1667 16.2385 31.2701 16.1389L18.0316 14.6667L18.0316 3.66669C18.0316 2.69422 17.6453 1.7616 16.9577 1.07396C16.27 0.386328 15.3374 1.73955e-05 14.365 1.73105e-05C13.3925 1.72254e-05 12.4599 0.386328 11.7722 1.07396C11.0846 1.76159 10.6983 2.69422 10.6983 3.66668L10.6983 25.6667L5.14328 23.4447C4.6792 23.2592 4.1821 23.1704 3.68249 23.1839C3.18289 23.1974 2.6913 23.3128 2.23791 23.5232C1.78452 23.7335 1.37888 24.0342 1.04588 24.4069C0.712888 24.7796 0.459565 25.2164 0.30145 25.6905L0.0942811 26.3139C-0.0225592 26.6636 -0.0309859 27.0405 0.0701035 27.3952C0.171197 27.7498 0.377084 28.0656 0.660783 28.3012L10.1886 36.2432Z' fill='%234E75FF' /%3E%3C/svg%3E")
+      17 0,
+    auto;
+  transform: scale(1.045);
+}
+
+.sl-overlay {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+.sl-wrapper .sl-close {
+  color: #fff;
+}
+
+.sl-wrapper .sl-close:hover {
+  color: #ffa502;
+}
+
+.sl-wrapper .sl-counter {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.sl-wrapper .sl-navigation button svg {
+  width: 44px;
+  height: 44px;
+}
+
+.sl-wrapper .sl-navigation button svg path {
+  fill: #fff !important;
+  transition: fill 300ms ease;
+}
+
+.sl-wrapper .sl-navigation button:hover svg path {
+  fill: #ffa502 !important;
+}
+
+.sl-wrapper .sl-navigation button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sl-wrapper .sl-caption {
+  background: rgba(255, 255, 255, 0.8) !important;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  color: #2e2f42 !important;
+
+  text-align: center;
+
+  padding: 16px;
+
+  width: 100% !important;
+  left: 0 !important;
+  bottom: 0 !important;
+}
