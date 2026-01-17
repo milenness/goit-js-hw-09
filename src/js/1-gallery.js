@@ -100,15 +100,3 @@ const gallery = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captionPosition: 'bottom',
 });
-
-gallery.on('show.simplelightbox', () => {
-  console.log('Галерея відкривається!');
-});
-
-gallery.on('closed.simplelightbox', () => {
-  console.log('Галерея закрита.');
-});
-
-gallery.on('error.simplelightbox', e => {
-  console.log('Сталася помилка завантаження зображення:', e);
-});
